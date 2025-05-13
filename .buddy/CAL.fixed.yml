@@ -10,7 +10,8 @@
     docker_image_name: library/node
     docker_image_tag: 22
     execute_commands:
+    - npm install -g yarn
     - rm -rf node_modules package-lock.json
-    - npm install --legacy-peer-deps
+    - yarn install
     - ""
     shell: BASH
